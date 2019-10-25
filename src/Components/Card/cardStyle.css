@@ -1,0 +1,96 @@
+.card{
+    height: 400px;
+    width: 32%;
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContent{
+    background-color: rgb(20,34,34);
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage{
+    /* border: solid 1px black; */
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.cardInfo{
+    /* border: solid 1px black; */
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoHolder{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pStyle{
+    margin: 0;
+    padding: 0;
+}
+
+.buttonHolder{
+    display: flex;
+    flex-direction: row;
+    /* border: solid 1px black; */
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#addButton{
+    background-color: green;
+}
+
+#compareButton{
+    background-color: blue;
+}
+
+.buttonStyle{
+    /* border: solid 1px black; */
+    height: 40px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: white;
+}
+
+#titleStyle{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        width: 97%;
+    }
+}

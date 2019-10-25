@@ -1,13 +1,14 @@
 .slider{
     /* border: solid 1px black; */
-    width: 100%;
-    height: 35vh;
+    width: 99%;
+    height: 30vh;
     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPdg7J_RLcv6m_16nHwGFgm7GNCa_4DeFA_kK9Rw2ZM1QQPQQL'); */
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .sliderButtonHolder{
     width: 100%;
-    height: 35%;
+    height: 30%;
 
     /* background-color: red; */
     position: absolute;
@@ -41,8 +42,9 @@
     /* position: absolute; */
 }
 
-/* @media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px){
     .sliderButtonHolder{
-        height: 35vh
+        width: 98%;
     }
-} */
+}

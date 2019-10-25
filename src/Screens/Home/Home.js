@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from '../Header/header';
 import Navigator from '../Navigator/navigator';
 import Slider from '../Slider/slider';
+import Content from '../Content/Content';
+
 import './HomeStyle.css'
 class Home extends Component {
     render() {
@@ -10,6 +12,7 @@ class Home extends Component {
                 <Header />
                 <Navigator />
                 <Slider />
+                <Content />
             </div>
         )
     }
