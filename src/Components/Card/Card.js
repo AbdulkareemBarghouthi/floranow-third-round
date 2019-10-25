@@ -6,11 +6,17 @@ const Card = (props) => {
         <div className="card">
             <div className="cardContent">
                 <div className="infoHolder">
-                    <div className="cardImage">
-                        <img
-                            style={{ height: "100%", width: "100%", borderRadius: "10px" }}
-                            src={props.image}
-                        />
+                    <div
+                        style={{ backgroundImage: `url(${props.image})` }}
+                        className="cardImage">
+                        {props.offer &&
+                            <div className="badgeContainer">
+                                <div className="badge">
+                                    {`${parseInt(Math.random() * 100)}% Off`}
+                                </div>
+                            </div>
+                        }
+
                     </div>
 
                     <div className="cardInfo">
@@ -19,8 +25,9 @@ const Card = (props) => {
                                 id="titleStyle"
                                 className="pStyle">{props.name}</p>
 
-                            <p
-                                className="pStyle">{props.id}</p>
+                            <p className="pStyle">
+                                {`Product Number: ${props.id + 20}`}</p>
+
                         </div>
                         <div className="buttonHolder">
                             <div
@@ -33,7 +40,7 @@ const Card = (props) => {
                                 id="compareButton"
                                 className="buttonStyle"
                             >
-                                Compare
+                                ignore
                             </div>
                         </div>
                     </div>

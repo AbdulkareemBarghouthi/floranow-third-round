@@ -19,7 +19,7 @@
 }
 .sliderButton{
     /* border: solid 1px black; */
-    background-color: white;
+    /* background-color: white; */
     height: 100%;
     width: 50px;
     display: flex;
@@ -45,6 +45,6 @@
 
 @media only screen and (max-width: 600px){
     .sliderButtonHolder{
-        width: 98%;
+        width: 99%;
     }
 }
