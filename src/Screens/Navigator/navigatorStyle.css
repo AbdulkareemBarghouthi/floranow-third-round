@@ -1,0 +1,38 @@
+.navigator{
+    /* border: solid 1px black; */
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'navigatorHome navigatorProducts navigatorAboutus'
+}
+
+.navigatorItem{
+    width: 100%;
+    border-bottom: solid 1px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigatorHome{
+    grid-area: navigatorHome; 
+}
+
+#navigatorProducts{
+    grid-area: navigatorProducts; 
+
+}
+
+#navigatorAboutus{
+    grid-area: navigatorAboutus;
+}
+
+@media only screen and (max-width: 600px){
+    .navigator{
+        grid-template-areas:
+        'navigatorHome'
+        'navigatorProducts'
+        'navigatorAboutus';
+
+    }
+}
