@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+#searchIcon{
+    display: none;
+}
+
 
 .searchBar{
     /* border: solid 1px red; */
@@ -43,6 +47,15 @@
 
 @media only screen and (max-width: 600px){
     .searchBar{
+        display: none;
         justify-content: center;
+    }
+
+    #searchIcon{
+        display: flex;    
+        height: 90%;
+        /* border: solid 1px black; */
+        justify-content: flex-end;
+        align-items: center;
     }
 }
